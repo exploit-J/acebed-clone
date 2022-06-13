@@ -1,0 +1,17 @@
+@mixin responsive {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+.sm-only {
+  @media screen and (min-width: 1025px) {
+    display: none !important;
+  }
+}
+
+.lg-only {
+  @media screen and (max-width: 1024px) {
+    display: none !important;
+  }
+}
