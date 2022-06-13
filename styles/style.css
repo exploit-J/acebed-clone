@@ -514,16 +514,19 @@ main {
         max-width: 1920px;
         padding: 140px 20px 0 20px;
         margin-top: 50px; } }
-    main .event ul {
-      width: 100%; }
+    main .event .evt-slide {
+      width: 100%;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -webkit-transform: translate3d(0, 0, 0); }
       @media screen and (min-width: 1025px) {
-        main .event ul {
+        main .event .evt-slide {
           height: 80vh; } }
-      main .event ul li a img {
+      main .event .evt-slide li a img {
         width: 100%;
         object-fit: cover; }
         @media screen and (min-width: 1025px) {
-          main .event ul li a img {
+          main .event .evt-slide li a img {
             height: 80vh; } }
     main .event .prev {
       position: absolute;

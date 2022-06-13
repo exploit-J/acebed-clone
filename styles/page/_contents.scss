@@ -40,8 +40,12 @@ main {
       padding: 140px 20px 0 20px;
       margin-top: 50px;
     }
-    ul {
+    .evt-slide {
       width: 100%;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0);
+      -webkit-transform: translate3d(0, 0, 0);
+
       @include responsive {
         height: 80vh;
       }
