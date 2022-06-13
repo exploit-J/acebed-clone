@@ -93,7 +93,7 @@ window.addEventListener("scroll", () => {
   //contact contents
   const storeMap = document.querySelector(".contact .contact-wrap .map");
   const mapH = storeMap.getBoundingClientRect().top;
-  if (windowH > mapH + 200) {
+  if (windowH > mapH + 300) {
     storeMap.classList.add("active");
   } else {
     storeMap.classList.remove("active");
