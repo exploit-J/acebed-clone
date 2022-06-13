@@ -1031,12 +1031,12 @@ main {
           margin-bottom: 50px; } }
       main .contact .as-app .as {
         display: flex;
+        justify-content: space-around;
         position: relative;
         padding: 20px;
         background-color: #f4f4f4; }
         @media screen and (min-width: 1025px) {
           main .contact .as-app .as {
-            justify-content: center;
             width: 50%;
             padding-top: 5%;
             padding-bottom: 5%; } }
@@ -1055,8 +1055,12 @@ main {
         main .contact .as-app .as dl {
           display: flex;
           flex-direction: column;
+          width: 50%;
           margin-right: 10px;
           color: #333333; }
+          @media screen and (min-width: 1025px) {
+            main .contact .as-app .as dl {
+              margin-right: 50px; } }
           main .contact .as-app .as dl:last-child {
             margin-right: 0; }
           main .contact .as-app .as dl dt {
@@ -1067,7 +1071,7 @@ main {
             font-size: 1.1rem; }
             main .contact .as-app .as dl dd:last-child {
               margin-bottom: 0;
-              font-size: 1rem; }
+              font-size: 0.8rem; }
       main .contact .as-app .app {
         padding: 20px;
         background-color: #f4f4f4;
@@ -1081,22 +1085,26 @@ main {
             background-color: #fff; } }
         main .contact .as-app .app p {
           margin-bottom: 20px;
-          font-size: 1.2rem; }
-        main .contact .as-app .app .button-wrap button {
-          width: 40%;
-          margin-right: 20px;
-          padding: 15px 0;
-          border: 1px solid #666666;
-          color: #333333; }
-          main .contact .as-app .app .button-wrap button:last-child {
-            margin-right: 0; }
-          @media screen and (min-width: 1025px) {
-            main .contact .as-app .app .button-wrap button {
-              font-size: 1.3rem;
-              transition: 0.5s; }
-              main .contact .as-app .app .button-wrap button:hover {
-                background-color: #0890c0;
-                color: #fff; } }
+          font-size: 1.2rem;
+          text-align: center; }
+        main .contact .as-app .app .button-wrap {
+          display: flex;
+          justify-content: center; }
+          main .contact .as-app .app .button-wrap button {
+            width: 40%;
+            margin-right: 20px;
+            padding: 15px 0;
+            border: 1px solid #666666;
+            color: #333333; }
+            main .contact .as-app .app .button-wrap button:last-child {
+              margin-right: 0; }
+            @media screen and (min-width: 1025px) {
+              main .contact .as-app .app .button-wrap button {
+                font-size: 1.3rem;
+                transition: 0.5s; }
+                main .contact .as-app .app .button-wrap button:hover {
+                  background-color: #0890c0;
+                  color: #fff; } }
   main .top-button {
     position: fixed;
     right: 5px;

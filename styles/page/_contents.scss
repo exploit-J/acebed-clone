@@ -501,6 +501,7 @@ main {
             opacity: 1;
           }
         }
+
         @include responsive {
           padding: 10px 10px;
           width: 330px;
@@ -663,11 +664,12 @@ main {
       }
       .as {
         display: flex;
+        justify-content: space-around;
         position: relative;
+
         padding: 20px;
         background-color: $background;
         @include responsive {
-          justify-content: center;
           width: 50%;
           padding-top: 5%;
           padding-bottom: 5%;
@@ -688,10 +690,11 @@ main {
         dl {
           display: flex;
           flex-direction: column;
+          width: 50%;
           margin-right: 10px;
           color: $primary;
           @include responsive {
-            // width: 50%;
+            margin-right: 50px;
           }
           &:last-child {
             margin-right: 0;
@@ -705,7 +708,7 @@ main {
             font-size: 1.1rem;
             &:last-child {
               margin-bottom: 0;
-              font-size: 1rem;
+              font-size: 0.8rem;
             }
           }
         }
@@ -724,8 +727,11 @@ main {
         p {
           margin-bottom: 20px;
           font-size: 1.2rem;
+          text-align: center;
         }
         .button-wrap {
+          display: flex;
+          justify-content: center;
           button {
             width: 40%;
             margin-right: 20px;

@@ -84,10 +84,9 @@ window.addEventListener("scroll", () => {
   let timer = 100;
   if (windowH > snsH + 200) {
     snsContents.forEach((item) => {
+      item.classList.remove("active");
       item.style.animation = `up 0.5s ${(timer += 100)}ms forwards`;
     });
-  } else {
-    item.classList.add("active");
   }
 
   //contact contents
