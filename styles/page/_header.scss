@@ -65,10 +65,10 @@ header {
             opacity: 0.7;
           }
           &:first-child {
-            background-color: $green;
+            background-color: rgba($green, 0.7);
           }
           &:last-child {
-            background-color: $red;
+            background-color: rgba($red, 0.7);
           }
         }
       }
@@ -241,6 +241,9 @@ header {
           padding: 8px 0;
           margin-right: 10px;
           background-color: $background;
+          * {
+            color: $primary;
+          }
           @include responsive {
             width: fit-content;
             padding: 0;
