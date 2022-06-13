@@ -3,6 +3,8 @@ const eventCarousel = tns({
   navContainer: ".event .ctrl-button",
   controlsContainer: ".event .ctrl-angle",
   preventScrollOnTouch: true,
+  //test
+  touch: false,
 });
 
 const aboutCarousel = tns({
@@ -10,6 +12,8 @@ const aboutCarousel = tns({
   controls: false,
   navContainer: ".about .ctrl-wrap",
   preventScrollOnTouch: true,
+  //test
+  mouseDrag: true,
 });
 
 const collectionNewCarousel = tns({
@@ -29,6 +33,8 @@ const collectionNewCarousel = tns({
   },
   preventScrollOnTouch: true,
   rewind: true,
+  //test
+  preventActionWhenRunning: true,
 });
 
 const collectionRecommendCarousel = tns({
@@ -46,6 +52,7 @@ const collectionRecommendCarousel = tns({
       edgePadding: 400,
     },
   },
-  preventScrollOnTouch: true,
   rewind: true,
+  //test
+  // preventScrollOnTouch: true,
 });
